@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2d0e36b-638b-4cf4-ab9a-95187c5684ca" name="Changes" comment="Criar app produto. Close #5">
+    <list default="true" id="e2d0e36b-638b-4cf4-ab9a-95187c5684ca" name="Changes" comment="Criar app estoque. Close #6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestao_estoque/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestao_estoque/estoque/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/estoque/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestao_estoque/produto/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/produto/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestao_estoque/produto/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/produto/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +121,7 @@
       <option name="presentableId" value="Default" />
       <updated>1679872831001</updated>
       <workItem from="1679872839321" duration="3261000" />
-      <workItem from="1679965304116" duration="2618000" />
+      <workItem from="1679965304116" duration="4106000" />
     </task>
     <task id="LOCAL-00001" summary="Criar projeto. Close #3">
       <created>1679873324999</created>
@@ -149,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679968078294</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Criar app estoque. Close #6">
+      <created>1679968688112</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679968688112</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,7 +180,8 @@
     <MESSAGE value="Links no README" />
     <MESSAGE value="Criar app core. Close #4" />
     <MESSAGE value="Criar app produto. Close #5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criar app produto. Close #5" />
+    <MESSAGE value="Criar app estoque. Close #6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criar app estoque. Close #6" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/gestao_estoque$env_gen.coverage" NAME="env_gen Coverage Results" MODIFIED="1679874758597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/contrib" />
