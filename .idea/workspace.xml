@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2d0e36b-638b-4cf4-ab9a-95187c5684ca" name="Changes" comment="Ajustando o Admin. Close #7">
+    <list default="true" id="e2d0e36b-638b-4cf4-ab9a-95187c5684ca" name="Changes" comment="TabularInline. Close #7">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestao_estoque/estoque/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/estoque/admin.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +14,13 @@
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -58,7 +64,29 @@
       <recent name="D:\Estudo\Python\Django\gestao_estoque" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.env_gen">
+  <component name="RunManager" selected="Python.create_data">
+    <configuration name="create_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="gestao_estoque" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/create_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="env_gen" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="gestao_estoque" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -106,6 +134,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.create_data" />
         <item itemvalue="Python.env_gen" />
       </list>
     </recent_temporary>
@@ -119,7 +148,7 @@
       <option name="presentableId" value="Default" />
       <updated>1679872831001</updated>
       <workItem from="1679872839321" duration="3261000" />
-      <workItem from="1679965304116" duration="4444000" />
+      <workItem from="1679965304116" duration="5886000" />
     </task>
     <task id="LOCAL-00001" summary="Criar projeto. Close #3">
       <created>1679873324999</created>
@@ -163,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679971976584</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="TabularInline. Close #7">
+      <created>1679972179892</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679972179892</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,9 +223,11 @@
     <MESSAGE value="Criar app produto. Close #5" />
     <MESSAGE value="Criar app estoque. Close #6" />
     <MESSAGE value="Ajustando o Admin. Close #7" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajustando o Admin. Close #7" />
+    <MESSAGE value="TabularInline. Close #7" />
+    <option name="LAST_COMMIT_MESSAGE" value="TabularInline. Close #7" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/gestao_estoque$create_data.coverage" NAME="create_data Coverage Results" MODIFIED="1679972928466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/gestao_estoque$env_gen.coverage" NAME="env_gen Coverage Results" MODIFIED="1679874758597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/contrib" />
   </component>
 </project>
