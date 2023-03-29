@@ -22,3 +22,9 @@ python manage.py migrate
 [python-decouple](https://github.com/HBNetwork/python-decouple)
 
 [package-of-the-week-python-decouple](https://simpleisbetterthancomplex.com/2015/11/26/package-of-the-week-python-decouple.html)
+
+[bootstrap-start-template](https://getbootstrap.com/docs/5.3/getting-started/introduction/#quick-start)
+
+[emmet](https://emmet.io/)
+
+[start.html](https://github.com/JTruax/bootstrap-starter-template/blob/master/template/start.html)
