@@ -16,3 +16,8 @@ def produto_detail(request, pk):
     return render(request, template_name, context)
 
 
+def produto_add(request):
+    template_name = 'produto_form.html'
+    return render(request, template_name)
+
+

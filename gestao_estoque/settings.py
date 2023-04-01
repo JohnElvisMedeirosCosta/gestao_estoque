@@ -27,10 +27,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # terceiro
+    'widget_tweaks',
     #myapps
     'gestao_estoque.core',
     'gestao_estoque.produto',
     'gestao_estoque.estoque',
+
 ]
 
 MIDDLEWARE = [
