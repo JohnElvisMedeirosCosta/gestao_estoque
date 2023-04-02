@@ -26,7 +26,7 @@
                 {% for object in object_list %}
                     <tr>
                         <td>
-                            <a href="">
+                            <a href="{% url 'estoque:estoque_entrada_detail' object.pk %}">
                                 {{ object }}
                             </a>
                         </td>
