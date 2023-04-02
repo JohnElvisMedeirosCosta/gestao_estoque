@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2d0e36b-638b-4cf4-ab9a-95187c5684ca" name="Changes" comment="Produto: produto_detail.html. Close #11">
-      <change afterPath="$PROJECT_DIR$/gestao_estoque/produto/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gestao_estoque/produto/templates/produto_form.html" afterDir="false" />
+    <list default="true" id="e2d0e36b-638b-4cf4-ab9a-95187c5684ca" name="Changes" comment="Produto: produto_form.html. Close #12">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestao_estoque/produto/templates/produto_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/produto/templates/produto_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestao_estoque/produto/templates/produto_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/produto/templates/produto_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gestao_estoque/produto/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/produto/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gestao_estoque/produto/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/produto/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestao_estoque/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +155,7 @@
       <updated>1679872831001</updated>
       <workItem from="1679872839321" duration="3261000" />
       <workItem from="1679965304116" duration="15572000" />
-      <workItem from="1680134307815" duration="11300000" />
+      <workItem from="1680134307815" duration="14052000" />
     </task>
     <task id="LOCAL-00001" summary="Criar projeto. Close #3">
       <created>1679873324999</created>
@@ -239,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680319412595</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Produto: produto_form.html. Close #12">
+      <created>1680321448180</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1680321448180</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,7 +270,8 @@
     <MESSAGE value="Template: criar template base. Close #9" />
     <MESSAGE value="Produto: produto_list.html. Close #10" />
     <MESSAGE value="Produto: produto_detail.html. Close #11" />
-    <option name="LAST_COMMIT_MESSAGE" value="Produto: produto_detail.html. Close #11" />
+    <MESSAGE value="Produto: produto_form.html. Close #12" />
+    <option name="LAST_COMMIT_MESSAGE" value="Produto: produto_form.html. Close #12" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/gestao_estoque$create_data.coverage" NAME="create_data Coverage Results" MODIFIED="1679972928466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
