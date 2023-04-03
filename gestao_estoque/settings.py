@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # terceiro
     'widget_tweaks',
+    'bootstrapform',
     #myapps
     'gestao_estoque.core',
     'gestao_estoque.produto',
@@ -107,7 +108,7 @@ TIME_ZONE = 'America/Sao_Paulo'
 
 USE_I18N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)

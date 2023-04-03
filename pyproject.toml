@@ -11,6 +11,7 @@ python = "^3.11"
 django = "^4.1.7"
 python-decouple = "^3.8"
 django-widget-tweaks = "^1.4.12"
+django-bootstrap-form = "^3.4"
 
 
 [build-system]

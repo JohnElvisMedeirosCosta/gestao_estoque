@@ -15,6 +15,7 @@ cd estoque
 poetry install
 poetry shell
 python manage.py migrate
+python manage.py runserver
 ```
 
 ## Links
@@ -32,3 +33,9 @@ python manage.py migrate
 [django-widget-tweaks](https://github.com/jazzband/django-widget-tweaks)
 
 [Class Based View - ccbv.co.uk](https://ccbv.co.uk/)
+
+[form-inline](https://felipefrizzo.github.io/post/form-inline/)
+
+[form-inline-cbv](https://felipefrizzo.github.io/post/form-inline-cbv/)
+
+[django-bootstrap-form](https://django-bootstrap-form.readthedocs.io/en/latest/)

@@ -37,6 +37,20 @@ argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
+name = "django-bootstrap-form"
+version = "3.4"
+description = "django-bootstrap-form"
+category = "main"
+optional = false
+python-versions = "*"
+files = [
+    {file = "django-bootstrap-form-3.4.tar.gz", hash = "sha256:de3f7893e515352834d446c441c0cb861637f92cebbe59d8229469c6cd3dc640"},
+]
+
+[package.dependencies]
+django = ">=1.5"
+
+[[package]]
 name = "django-widget-tweaks"
 version = "1.4.12"
 description = "Tweak the form field rendering in templates, not in python-level form definitions."
@@ -87,4 +101,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "b58c07cdc236aa0fa56d22299c4d4dae91cdad10e6597bf39260d31290dd5d42"
+content-hash = "344ac9ce8396ddd4502f4b81e5453004dc51849262532a7717ec89d034813a2e"
