@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2d0e36b-638b-4cf4-ab9a-95187c5684ca" name="Changes" comment="Estoque Entrada: estoque_entrada_form.html. Close #18">
+    <list default="true" id="e2d0e36b-638b-4cf4-ab9a-95187c5684ca" name="Changes" comment="Estoque Entrada: chamada ajax para atualizar o saldo de cada produto. Close #19">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestao_estoque/estoque/templates/estoque_entrada_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/estoque/templates/estoque_entrada_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestao_estoque/produto/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/produto/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestao_estoque/produto/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/produto/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestao_estoque/produto/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/produto/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestao_estoque/estoque/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/estoque/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +153,7 @@
       <workItem from="1679872839321" duration="3261000" />
       <workItem from="1679965304116" duration="15572000" />
       <workItem from="1680134307815" duration="32063000" />
-      <workItem from="1680566102198" duration="3201000" />
+      <workItem from="1680566102198" duration="3804000" />
     </task>
     <task id="LOCAL-00001" summary="Criar projeto. Close #3">
       <created>1679873324999</created>
@@ -284,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680487397717</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Estoque Entrada: chamada ajax para atualizar o saldo de cada produto. Close #19">
+      <created>1680572543131</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1680572543131</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,7 +324,8 @@
     <MESSAGE value="Estoque Entrada: estoque_entrada_list.html. Close #16" />
     <MESSAGE value="Estoque Entrada: estoque_entrada_detail.html. Close #17" />
     <MESSAGE value="Estoque Entrada: estoque_entrada_form.html. Close #18" />
-    <option name="LAST_COMMIT_MESSAGE" value="Estoque Entrada: estoque_entrada_form.html. Close #18" />
+    <MESSAGE value="Estoque Entrada: chamada ajax para atualizar o saldo de cada produto. Close #19" />
+    <option name="LAST_COMMIT_MESSAGE" value="Estoque Entrada: chamada ajax para atualizar o saldo de cada produto. Close #19" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/gestao_estoque$create_data.coverage" NAME="create_data Coverage Results" MODIFIED="1679972928466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
