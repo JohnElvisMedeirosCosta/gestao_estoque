@@ -4,19 +4,19 @@ from django.shortcuts import render, resolve_url
 from gestao_estoque.produto.models import Produto
 
 from .forms import EstoqueItemForm, EstoqueForm
-from .models import Estoque, EstoqueItem
+from .models import Estoque, EstoqueItem, EstoqueSaida, EstoqueEntrada
 
 
 def estoque_entrada_list(request):
     template_name = 'estoque_entrada_list.html'
-    objects = Estoque.objects.filter(movimento='e')
+    objects = EstoqueEntrada.objects.all()
     context = {'object_list': objects}
     return render(request, template_name, context)
 
 
 def estoque_entrada_detail(request, pk):
     template_name = 'estoque_entrada_detail.html'
-    obj = Estoque.objects.get(pk=pk)
+    obj = EstoqueEntrada.objects.get(pk=pk)
     context = {'object': obj}
     return render(request, template_name, context)
 
@@ -31,9 +31,9 @@ def dar_baixa_estoque(form):
 
 def estoque_entrada_add(request):
     template_name = 'estoque_entrada_form.html'
-    estoque_form = Estoque()
+    estoque_form = EstoqueEntrada()
     item_estoque_formset = inlineformset_factory(
-        Estoque,
+        EstoqueEntrada,
         EstoqueItem,
         form=EstoqueItemForm,
         extra=0,
@@ -54,4 +54,11 @@ def estoque_entrada_add(request):
         formset = item_estoque_formset(instance=estoque_form, prefix='estoque')
 
     context = {'form': form, 'formset': formset}
+    return render(request, template_name, context)
+
+
+def estoque_saida_list(request):
+    template_name = 'estoque_saida_list.html'
+    objects = EstoqueSaida.objects.all()
+    context = {'object_list': objects}
     return render(request, template_name, context)
