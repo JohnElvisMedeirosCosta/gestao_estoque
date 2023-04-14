@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2d0e36b-638b-4cf4-ab9a-95187c5684ca" name="Changes" comment="Estoque: managers.py. Close #22">
-      <change afterPath="$PROJECT_DIR$/gestao_estoque/estoque/templates/estoque_saida_list.html" afterDir="false" />
+    <list default="true" id="e2d0e36b-638b-4cf4-ab9a-95187c5684ca" name="Changes" comment="Estoque Saida: estoque_saida_list.html. Close #23">
+      <change afterPath="$PROJECT_DIR$/gestao_estoque/estoque/templates/estoque_saida_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestao_estoque/core/templates/includes/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/core/templates/includes/nav.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestao_estoque/estoque/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/estoque/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestao_estoque/estoque/templates/estoque_saida_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/estoque/templates/estoque_saida_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gestao_estoque/estoque/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/estoque/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gestao_estoque/estoque/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/estoque/views.py" afterDir="false" />
     </list>
@@ -164,7 +165,7 @@
       <workItem from="1680614321218" duration="1667000" />
       <workItem from="1680710594463" duration="51000" />
       <workItem from="1681329976096" duration="25000" />
-      <workItem from="1681437865208" duration="3742000" />
+      <workItem from="1681437865208" duration="4340000" />
     </task>
     <task id="LOCAL-00001" summary="Criar projeto. Close #3">
       <created>1679873324999</created>
@@ -320,7 +321,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681441469486</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Estoque Saida: estoque_saida_list.html. Close #23">
+      <created>1681443371708</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1681443371708</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,7 +368,8 @@
     <MESSAGE value="Estoque Entrada: dar entrada no estoque. Close #20" />
     <MESSAGE value="Estoque Saida: proxy model. Close #21" />
     <MESSAGE value="Estoque: managers.py. Close #22" />
-    <option name="LAST_COMMIT_MESSAGE" value="Estoque: managers.py. Close #22" />
+    <MESSAGE value="Estoque Saida: estoque_saida_list.html. Close #23" />
+    <option name="LAST_COMMIT_MESSAGE" value="Estoque Saida: estoque_saida_list.html. Close #23" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/gestao_estoque$create_data.coverage" NAME="create_data Coverage Results" MODIFIED="1679972928466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
