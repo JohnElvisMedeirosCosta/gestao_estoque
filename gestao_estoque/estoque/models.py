@@ -4,6 +4,7 @@ from django.urls import reverse_lazy
 
 from gestao_estoque.core.models import TimeStampedModel
 from gestao_estoque.produto.models import Produto
+from gestao_estoque.estoque.managers import EstoqueSaidaManager, EstoqueEntradaManager
 
 MOVIMENTO = (
     ('e', 'Entrada'),
@@ -29,22 +30,12 @@ class Estoque(TimeStampedModel):
         return str(self.nf).zfill(6)
 
 
-class EstoqueEntradaManager(models.Manager):
-    def get_queryset(self):
-        return super(EstoqueEntradaManager, self).get_queryset().filter(movimento='e')
-
-
 class EstoqueEntrada(Estoque):
     objects = EstoqueEntradaManager()
     class Meta:
         proxy = True
         verbose_name = 'estoque entrada'
         verbose_name_plural = 'estoque entrada'
-
-
-class EstoqueSaidaManager(models.Manager):
-    def get_queryset(self):
-        return super(EstoqueSaidaManager, self).get_queryset().filter(movimento='s')
 
 
 class EstoqueSaida(Estoque):
