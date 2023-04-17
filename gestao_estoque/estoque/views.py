@@ -21,15 +21,9 @@ class EstoqueEntradaList(ListView):
         return context
 
 
-class EstoqueEntradaDetail(DetailView):
-    model = EstoqueEntrada
+class EstoqueDetail(DetailView):
+    model = Estoque
     template_name = 'estoque_detail.html'
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context['url_list'] = 'estoque:estoque_entrada_list'
-        return context
-
 
 
 def dar_baixa_estoque(form):
