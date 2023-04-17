@@ -1,6 +1,5 @@
 from django.db import models
 from django.contrib.auth.models import User
-from django.urls import reverse_lazy
 
 from gestao_estoque.core.models import TimeStampedModel
 from gestao_estoque.produto.models import Produto
