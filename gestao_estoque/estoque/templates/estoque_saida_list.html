@@ -1,7 +1,6 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
     <h2>Estoque Saida
         <span class="float-right">
             <a href="{% url 'estoque:estoque_saida_add' %}">
@@ -30,7 +29,7 @@
                                 {{ object }}
                             </a>
                         </td>
-                        <td>{{ object.nf }}</td>
+                        <td>{{ object.nf_formated }}</td>
                         <td>{{ object.created }}</td>
                         <td>{{ object.funcionario.first_name }}</td>
                     </tr>
