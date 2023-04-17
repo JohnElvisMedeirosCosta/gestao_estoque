@@ -20,10 +20,13 @@ def estoque_entrada_list(request):
 
 
 def estoque_entrada_detail(request, pk):
-    template_name = 'estoque_entrada_detail.html'
+    template_name = 'estoque_detail.html'
     obj = EstoqueEntrada.objects.get(pk=pk)
-    context = {'object': obj}
+    context = {'object': obj,
+               'url_list': 'estoque:estoque_entrada_list'
+    }
     return render(request, template_name, context)
+
 
 def dar_baixa_estoque(form):
     # Pega os produtos a partir da instância do formulário (Estoque)
@@ -86,9 +89,11 @@ def estoque_saida_list(request):
 
 
 def estoque_saida_detail(request, pk):
-    template_name = 'estoque_saida_detail.html'
+    template_name = 'estoque_detail.html'
     obj = EstoqueSaida.objects.get(pk=pk)
-    context = {'object': obj}
+    context = {'object': obj,
+               'url_list': 'estoque:estoque_saida_list'
+    }
     return render(request, template_name, context)
 
 
