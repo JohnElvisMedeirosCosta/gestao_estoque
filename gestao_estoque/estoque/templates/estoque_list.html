@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h2>Estoque Saida
+    <h2>Estoque {{ titulo }}
         <span class="float-right">
-            <a href="{% url 'estoque:estoque_saida_add' %}">
+            <a href="{% url url_add %}">
                 <button type="button" class="btn btn-primary">
                     <span class="fa fa-plus"></span> Adicionar
                 </button>
@@ -25,7 +25,7 @@
                 {% for object in object_list %}
                     <tr>
                         <td>
-                            <a href="{% url 'estoque:estoque_saida_detail' object.pk %}">
+                            <a href="{% url url_detail object.pk %}">
                                 {{ object }}
                             </a>
                         </td>

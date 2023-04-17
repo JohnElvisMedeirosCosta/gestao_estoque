@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2d0e36b-638b-4cf4-ab9a-95187c5684ca" name="Changes" comment="Tirando o input 'movimento' do form. Close #27">
+    <list default="true" id="e2d0e36b-638b-4cf4-ab9a-95187c5684ca" name="Changes" comment="Transformando estoque_entrada_add e estoque_saida_add em um só. Close #28">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestao_estoque/estoque/templates/estoque_entrada_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestao_estoque/estoque/templates/estoque_saida_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/estoque/templates/estoque_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gestao_estoque/estoque/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/estoque/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -165,7 +167,7 @@
       <workItem from="1680710594463" duration="51000" />
       <workItem from="1681329976096" duration="25000" />
       <workItem from="1681437865208" duration="8735000" />
-      <workItem from="1681662997668" duration="8004000" />
+      <workItem from="1681662997668" duration="8975000" />
     </task>
     <task id="LOCAL-00001" summary="Criar projeto. Close #3">
       <created>1679873324999</created>
@@ -363,7 +365,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681692155441</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Transformando estoque_entrada_add e estoque_saida_add em um só. Close #28">
+      <created>1681696908933</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1681696908933</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,7 +390,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Criar app produto. Close #5" />
     <MESSAGE value="Criar app estoque. Close #6" />
     <MESSAGE value="Ajustando o Admin. Close #7" />
     <MESSAGE value="TabularInline. Close #7" />
@@ -406,7 +414,8 @@
     <MESSAGE value="Separando os estáticos. Close #26" />
     <MESSAGE value="Separando os estáticos. produto.js Close #26" />
     <MESSAGE value="Tirando o input 'movimento' do form. Close #27" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tirando o input 'movimento' do form. Close #27" />
+    <MESSAGE value="Transformando estoque_entrada_add e estoque_saida_add em um só. Close #28" />
+    <option name="LAST_COMMIT_MESSAGE" value="Transformando estoque_entrada_add e estoque_saida_add em um só. Close #28" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/gestao_estoque$create_data.coverage" NAME="create_data Coverage Results" MODIFIED="1679972928466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
