@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2d0e36b-638b-4cf4-ab9a-95187c5684ca" name="Changes" comment="Estoque Saida: estoque_saida_form.html. Close #25">
-      <change afterPath="$PROJECT_DIR$/gestao_estoque/core/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gestao_estoque/core/static/js/estoque_entrada.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gestao_estoque/core/static/js/estoque_saida.js" afterDir="false" />
+    <list default="true" id="e2d0e36b-638b-4cf4-ab9a-95187c5684ca" name="Changes" comment="Separando os estáticos. Close #26">
+      <change afterPath="$PROJECT_DIR$/gestao_estoque/core/static/js/produto.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestao_estoque/core/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/core/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestao_estoque/estoque/templates/estoque_entrada_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/estoque/templates/estoque_entrada_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestao_estoque/estoque/templates/estoque_saida_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/estoque/templates/estoque_saida_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestao_estoque/estoque/templates/estoque_entrada_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/estoque/templates/estoque_entrada_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gestao_estoque/produto/templates/produto_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/produto/templates/produto_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestao_estoque/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +167,7 @@
       <workItem from="1680710594463" duration="51000" />
       <workItem from="1681329976096" duration="25000" />
       <workItem from="1681437865208" duration="8735000" />
-      <workItem from="1681662997668" duration="2424000" />
+      <workItem from="1681662997668" duration="5032000" />
     </task>
     <task id="LOCAL-00001" summary="Criar projeto. Close #3">
       <created>1679873324999</created>
@@ -349,7 +344,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681529661803</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Separando os estáticos. Close #26">
+      <created>1681667297502</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1681667297502</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,7 +369,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Criar projeto. Close #3" />
     <MESSAGE value="Links no README" />
     <MESSAGE value="Criar app core. Close #4" />
     <MESSAGE value="Criar app produto. Close #5" />
@@ -392,7 +393,8 @@
     <MESSAGE value="Estoque Saida: estoque_saida_list.html. Close #23" />
     <MESSAGE value="Estoque Saida: estoque_saida_detail.html. Close #24" />
     <MESSAGE value="Estoque Saida: estoque_saida_form.html. Close #25" />
-    <option name="LAST_COMMIT_MESSAGE" value="Estoque Saida: estoque_saida_form.html. Close #25" />
+    <MESSAGE value="Separando os estáticos. Close #26" />
+    <option name="LAST_COMMIT_MESSAGE" value="Separando os estáticos. Close #26" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/gestao_estoque$create_data.coverage" NAME="create_data Coverage Results" MODIFIED="1679972928466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
