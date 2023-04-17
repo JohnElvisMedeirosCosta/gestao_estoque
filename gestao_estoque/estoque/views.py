@@ -1,7 +1,7 @@
 from django.forms import inlineformset_factory
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render, resolve_url
-from django.views.generic import ListView
+from django.views.generic import ListView, DetailView
 
 from gestao_estoque.produto.models import Produto
 
@@ -21,13 +21,15 @@ class EstoqueEntradaList(ListView):
         return context
 
 
-def estoque_entrada_detail(request, pk):
+class EstoqueEntradaDetail(DetailView):
+    model = EstoqueEntrada
     template_name = 'estoque_detail.html'
-    obj = EstoqueEntrada.objects.get(pk=pk)
-    context = {'object': obj,
-               'url_list': 'estoque:estoque_entrada_list'
-    }
-    return render(request, template_name, context)
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['url_list'] = 'estoque:estoque_entrada_list'
+        return context
+
 
 
 def dar_baixa_estoque(form):
@@ -89,14 +91,15 @@ class EstoqueSaidaList(ListView):
         context['url_detail'] = 'estoque:estoque_saida_detail'
         return context
 
-def estoque_saida_detail(request, pk):
-    template_name = 'estoque_detail.html'
-    obj = EstoqueSaida.objects.get(pk=pk)
-    context = {'object': obj,
-               'url_list': 'estoque:estoque_saida_list'
-    }
-    return render(request, template_name, context)
 
+class EstoqueSaidaDetail(DetailView):
+    model = EstoqueSaida
+    template_name = 'estoque_detail.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['url_list'] = 'estoque:estoque_saida_list'
+        return context
 
 def estoque_saida_add(request):
     template_name = 'estoque_saida_form.html'
