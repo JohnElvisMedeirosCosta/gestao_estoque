@@ -4,7 +4,7 @@ from django.shortcuts import render, resolve_url
 from django.views.generic import ListView, DetailView
 from django.contrib.auth.decorators import login_required
 from gestao_estoque.produto.models import Produto
-
+import ipdb;
 from .forms import EstoqueItemForm, EstoqueForm
 from .models import Estoque, EstoqueItem, EstoqueSaida, EstoqueEntrada
 
@@ -50,7 +50,8 @@ def estoque_add(request, template_name, movimento, url):
         form = EstoqueForm(request.POST, instance=estoque_form, prefix='main')
         formset = item_estoque_formset(request.POST, instance=estoque_form, prefix='estoque')
         if form.is_valid() and formset.is_valid():
-            form = form.save()
+            form = form.save(commit=False)
+            form.funcionario = request.user
             form.movimento = movimento
             form.save()
             formset.save()

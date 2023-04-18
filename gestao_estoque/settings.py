@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     # terceiro
     'widget_tweaks',
     'bootstrapform',
+    'django_extensions',
     #myapps
     'gestao_estoque.core',
     'gestao_estoque.produto',

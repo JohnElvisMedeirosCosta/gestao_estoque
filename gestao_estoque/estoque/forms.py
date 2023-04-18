@@ -5,7 +5,7 @@ from .models import Estoque, EstoqueItem
 class EstoqueForm(forms.ModelForm):
     class Meta:
         model = Estoque
-        fields = ('funcionario', 'nf')
+        fields = ('nf',)
 
 
 class EstoqueItemForm(forms.ModelForm):
