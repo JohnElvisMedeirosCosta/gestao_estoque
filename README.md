@@ -39,3 +39,7 @@ python manage.py runserver
 [form-inline-cbv](https://felipefrizzo.github.io/post/form-inline-cbv/)
 
 [django-bootstrap-form](https://django-bootstrap-form.readthedocs.io/en/latest/)
+
+[pagination-gist](https://gist.github.com/rg3915/01ca76f099f431c24bc0536bef83076b#file-pagination02-html)
+
+[pagination-bootstrap](https://getbootstrap.com/docs/4.0/components/pagination/)
