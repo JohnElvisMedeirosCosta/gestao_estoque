@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import CreateView, UpdateView
 from django.http import JsonResponse
+import ipdb
 
 from .forms import ProdutoForm
 from .models import Produto
@@ -9,6 +10,9 @@ from .models import Produto
 def produto_list(request):
     template_name = 'produto_list.html'
     objects = Produto.objects.all()
+    search = request.GET.get('search')
+    if search:
+        objects = Produto.objects.filter(produto__icontains=search)
     context = {'object_list': objects}
     return render(request, template_name, context)
 
