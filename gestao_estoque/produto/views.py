@@ -1,10 +1,13 @@
 import csv
 import io
+import os
 
+from django.conf import settings
 from django.shortcuts import render
 from django.urls import reverse
 from django.views.generic import CreateView, UpdateView, ListView
-from django.http import JsonResponse, HttpResponseRedirect
+from django.http import JsonResponse, HttpResponseRedirect, HttpResponse
+from django.contrib import messages
 
 from .forms import ProdutoForm
 from .models import Produto
@@ -82,3 +85,23 @@ def import_csv(request):
         return HttpResponseRedirect(reverse('produto:produto_list'))
     template_name = 'produto_import.html'
     return render(request, template_name)
+
+def export_csv(request):
+    header = ['produto', 'ncm', 'importado', 'preco', 'estoque', 'estoque_minimo']
+    produtos = Produto.objects.all().values_list(*header)
+    with open('fix/produtos_exportados.csv', 'w') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerow(header)
+        writer.writerows(produtos)
+
+    caminho_do_arquivo = os.path.join(settings.BASE_DIR, 'fix', 'produtos_exportados.csv')
+    if os.path.exists(caminho_do_arquivo):
+        messages.success(request, 'Produtos exportados com sucesso!')
+        with open(caminho_do_arquivo, 'rb') as arquivo:
+            response = HttpResponse(arquivo.read(), content_type='text/csv')
+            response['Content-Disposition'] = 'attachment; filename=produtos_exportados.csv'
+            return response
+    else:
+        messages.error(request, 'Não foi possível exportar os produtos!')
+        return HttpResponseRedirect(reverse('produto:produto_list'))
+

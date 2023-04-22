@@ -1,6 +1,15 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<div id="message_container">
+    {% for message in messages %}
+        {% if 'success' in message.tags %}
+            <p class="alert alert-success" role="alert"><span style="font-weight: bolder">{{ message }}</span></p>
+            {% elif 'error' in message.tags %}
+            <p class="alert alert-danger" role="alert"><span style="font-weight: bolder">{{ message }}</span>/p>
+        {% endif %}
+    {% endfor %}
+</div>
 
 <div class="row">
     <div class="col-sm-6  pl-0">
@@ -64,4 +73,20 @@
 
 </div>
     {% include 'includes/pagination.html' %}
+{% endblock %}
+
+{% block js %}
+    <script>
+        {#Se a mensagem for de sucesso, vai ser feito o download do arquivo na pasta fix/produtos_exportados.csv#}
+        $(document).ready(function(){
+            if($('#message_container').text().indexOf('success') > -1){
+                window.location.href = 'gestao_estoque/fix/produtos_exportados.csv';
+            }
+        });
+        document.addEventListener("DOMContentLoaded", function(event) {
+            setTimeout(function(){
+                $('#message_container').remove();
+            }, 3000);
+        });
+    </script>
 {% endblock %}
