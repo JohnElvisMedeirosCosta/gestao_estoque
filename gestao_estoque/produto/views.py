@@ -3,20 +3,45 @@ import io
 import os
 
 from django.conf import settings
+from django.db.models import Q
 from django.shortcuts import render
 from django.urls import reverse
 from django.views.generic import CreateView, UpdateView, ListView
 from django.http import JsonResponse, HttpResponseRedirect, HttpResponse
 from django.contrib import messages
 
-from .forms import ProdutoForm
-from .models import Produto
+from .forms import ProdutoForm, CategoriaForm
+from .models import Produto, Categoria
 
 
 class ProdutoList(ListView):
     model = Produto
     template_name = 'produto_list.html'
     paginate_by = 10
+
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        search_term = self.request.GET.get('search')
+        if search_term:
+            queryset = queryset.filter(
+                Q(produto__icontains=search_term)
+            )
+        return queryset
+
+
+class CategoriaList(ListView):
+    model = Categoria
+    template_name = 'categoria_list.html'
+    paginate_by = 10
+
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        search_term = self.request.GET.get('search')
+        if search_term:
+            queryset = queryset.filter(
+                Q(categoria__icontains=search_term)
+            )
+        return queryset
 
 
 def produto_detail(request, pk):
@@ -25,24 +50,35 @@ def produto_detail(request, pk):
     context = {'object': obj}
     return render(request, template_name, context)
 
+def categoria_detail(request, pk):
+    template_name = 'categoria_detail.html'
+    obj = Categoria.objects.get(pk=pk)
+    context = {'object': obj}
+    return render(request, template_name, context)
 
 def produto_add(request):
     template_name = 'produto_form.html'
     return render(request, template_name)
 
-
 class ProdutoCreate(CreateView):
-    #Ok
     model = Produto
     template_name = 'produto_form.html'
     form_class = ProdutoForm
 
+class CategoriaCreate(CreateView):
+    model = Categoria
+    template_name = 'categoria_form.html'
+    form_class = CategoriaForm
 
 class ProdutoUpdate(UpdateView):
     model = Produto
     template_name = 'produto_form.html'
     form_class = ProdutoForm
 
+class CategoriaUpdate(UpdateView):
+    model = Categoria
+    template_name = 'Categoria_form.html'
+    form_class = CategoriaForm
 
 def produto_json(request, pk):
     produto = Produto.objects.filter(pk=pk)

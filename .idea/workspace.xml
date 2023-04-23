@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2d0e36b-638b-4cf4-ab9a-95187c5684ca" name="Changes" comment="Fix: Estoque bug ao editar quantidade de produtos diferentes. closes #62">
+    <list default="true" id="e2d0e36b-638b-4cf4-ab9a-95187c5684ca" name="Changes" comment="Inserindo modelo CSV no CSV Import de produtos. closes #63">
+      <change afterPath="$PROJECT_DIR$/gestao_estoque/produto/templates/categoria_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestao_estoque/produto/templates/categoria_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestao_estoque/produto/templates/categoria_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fix/produtos_exportados.csv" beforeDir="false" afterPath="$PROJECT_DIR$/fix/produtos_exportados.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestao_estoque/produto/templates/produto_import.html" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/produto/templates/produto_import.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestao_estoque/core/templates/includes/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/core/templates/includes/nav.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestao_estoque/produto/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/produto/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestao_estoque/produto/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/produto/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestao_estoque/produto/templates/produto_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/produto/templates/produto_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestao_estoque/produto/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/produto/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gestao_estoque/produto/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/produto/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +29,8 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -219,7 +225,7 @@
       <workItem from="1681782703075" duration="4829000" />
       <workItem from="1681956191613" duration="330000" />
       <workItem from="1681956723215" duration="4312000" />
-      <workItem from="1682177457195" duration="11244000" />
+      <workItem from="1682177457195" duration="13815000" />
     </task>
     <task id="LOCAL-00001" summary="Criar projeto. Close #3">
       <created>1679873324999</created>
@@ -550,7 +556,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682207536559</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Inserindo modelo CSV no CSV Import de produtos. closes #63">
+      <created>1682207831063</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1682207831063</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -568,7 +581,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Estoque Saida: estoque_saida_list.html. Close #23" />
     <MESSAGE value="Estoque Saida: estoque_saida_detail.html. Close #24" />
     <MESSAGE value="Estoque Saida: estoque_saida_form.html. Close #25" />
     <MESSAGE value="Separando os estáticos. Close #26" />
@@ -593,7 +605,8 @@
     <MESSAGE value="Importando CSV InMemoryUploadedFile. closes #45" />
     <MESSAGE value="Exportando CSV com Django. closes #46" />
     <MESSAGE value="Fix: Estoque bug ao editar quantidade de produtos diferentes. closes #62" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix: Estoque bug ao editar quantidade de produtos diferentes. closes #62" />
+    <MESSAGE value="Inserindo modelo CSV no CSV Import de produtos. closes #63" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inserindo modelo CSV no CSV Import de produtos. closes #63" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/gestao_estoque$create_data.coverage" NAME="create_data Coverage Results" MODIFIED="1679972928466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
