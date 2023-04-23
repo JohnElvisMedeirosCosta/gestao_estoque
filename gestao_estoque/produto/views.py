@@ -9,6 +9,7 @@ from django.urls import reverse
 from django.views.generic import CreateView, UpdateView, ListView
 from django.http import JsonResponse, HttpResponseRedirect, HttpResponse
 from django.contrib import messages
+from gestao_estoque.produto.actions.import_xls import import_xls as action_import_xls
 
 from .forms import ProdutoForm, CategoriaForm
 from .models import Produto, Categoria
@@ -141,3 +142,8 @@ def export_csv(request):
         messages.error(request, 'Não foi possível exportar os produtos!')
         return HttpResponseRedirect(reverse('produto:produto_list'))
 
+def import_xls(request):
+    filename = 'fix/produtos.xls'
+    action_import_xls(filename)
+    messages.success(request, 'Produtos importados com sucesso!')
+    return HttpResponseRedirect(reverse('produto:produto_list'))

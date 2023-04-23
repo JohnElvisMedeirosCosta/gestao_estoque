@@ -16,4 +16,5 @@ urlpatterns = [
     path('<int:pk>/json/', v.produto_json, name='produto_json'),
     path('import/csv/', v.import_csv, name='import_csv'),
     path('export/csv/', v.export_csv, name='export_csv'),
+    path('import/xls/', v.import_xls, name='import_xls'),
 ]
