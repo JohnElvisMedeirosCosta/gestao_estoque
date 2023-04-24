@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2d0e36b-638b-4cf4-ab9a-95187c5684ca" name="Changes" comment="Importando planilhas Excel com Django. closes #48">
+      <change afterPath="$PROJECT_DIR$/gestao_estoque/produto/actions/export_xls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestao_estoque/produto/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/produto/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestao_estoque/produto/templates/produto_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/produto/templates/produto_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestao_estoque/core/templates/includes/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/core/templates/includes/nav.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestao_estoque/produto/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/produto/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestao_estoque/produto/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/produto/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
     </list>
@@ -25,6 +27,7 @@
         <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="Jupyter Notebook" />
         <option value="Python Script" />
       </list>
     </option>
@@ -224,13 +227,8 @@
       <workItem from="1681956723215" duration="4312000" />
       <workItem from="1682177457195" duration="20103000" />
       <workItem from="1682289959075" duration="2423000" />
-    </task>
-    <task id="LOCAL-00001" summary="Criar projeto. Close #3">
-      <created>1679873324999</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1679873324999</updated>
+      <workItem from="1682293235111" duration="1670000" />
+      <workItem from="1682296656773" duration="3621000" />
     </task>
     <task id="LOCAL-00002" summary="Links no README">
       <created>1679874743807</created>
@@ -568,7 +566,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682210400264</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Importando planilhas Excel com Django. closes #48">
+      <created>1682293418028</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1682293418029</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

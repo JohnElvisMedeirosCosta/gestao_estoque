@@ -10,6 +10,7 @@ from django.views.generic import CreateView, UpdateView, ListView
 from django.http import JsonResponse, HttpResponseRedirect, HttpResponse
 from django.contrib import messages
 from gestao_estoque.produto.actions.import_xls import import_xls as action_import_xls
+from gestao_estoque.produto.actions.export_xls import exportar_produtos_xls as action_export_xls
 
 from .forms import ProdutoForm, CategoriaForm
 from .models import Produto, Categoria
@@ -146,4 +147,9 @@ def import_xls(request):
     filename = 'fix/produtos.xls'
     action_import_xls(filename)
     messages.success(request, 'Produtos importados com sucesso!')
+    return HttpResponseRedirect(reverse('produto:produto_list'))
+
+def export_xls(request):
+    action_export_xls()
+    messages.success(request, 'Produtos exportados com sucesso!')
     return HttpResponseRedirect(reverse('produto:produto_list'))
