@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2d0e36b-638b-4cf4-ab9a-95187c5684ca" name="Changes" comment="Importando planilhas Excel com Django. closes #48">
-      <change afterPath="$PROJECT_DIR$/gestao_estoque/core/static/js/estoque_admin.js" afterDir="false" />
+    <list default="true" id="e2d0e36b-638b-4cf4-ab9a-95187c5684ca" name="Changes" comment="Admin: Inserindo botões e inserindo JS, Importando e Exportando CSV e XLSX. closes #51, closes #52, closes #53">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gestao_estoque/produto/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/produto/admin.py" afterDir="false" />
     </list>
@@ -225,14 +224,7 @@
       <workItem from="1682289959075" duration="2423000" />
       <workItem from="1682293235111" duration="1670000" />
       <workItem from="1682296656773" duration="3621000" />
-      <workItem from="1682394035179" duration="727000" />
-    </task>
-    <task id="LOCAL-00002" summary="Links no README">
-      <created>1679874743807</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1679874743807</updated>
+      <workItem from="1682394035179" duration="1458000" />
     </task>
     <task id="LOCAL-00003" summary="Criar app core. Close #4">
       <created>1679875468035</created>
@@ -570,7 +562,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682293418029</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Admin: Inserindo botões e inserindo JS, Importando e Exportando CSV e XLSX. closes #51, closes #52, closes #53">
+      <created>1682394956215</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1682394956215</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -588,7 +587,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Separando os estáticos. Close #26" />
     <MESSAGE value="Separando os estáticos. produto.js Close #26" />
     <MESSAGE value="Tirando o input 'movimento' do form. Close #27" />
     <MESSAGE value="Transformando estoque_entrada_add e estoque_saida_add em um só. Close #28" />
@@ -613,7 +611,8 @@
     <MESSAGE value="Inserindo modelo CSV no CSV Import de produtos. closes #63" />
     <MESSAGE value="Criando categorias de produtos. closes #50" />
     <MESSAGE value="Importando planilhas Excel com Django. closes #48" />
-    <option name="LAST_COMMIT_MESSAGE" value="Importando planilhas Excel com Django. closes #48" />
+    <MESSAGE value="Admin: Inserindo botões e inserindo JS, Importando e Exportando CSV e XLSX. closes #51, closes #52, closes #53" />
+    <option name="LAST_COMMIT_MESSAGE" value="Admin: Inserindo botões e inserindo JS, Importando e Exportando CSV e XLSX. closes #51, closes #52, closes #53" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/gestao_estoque$create_data.coverage" NAME="create_data Coverage Results" MODIFIED="1679972928466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
