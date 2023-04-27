@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2d0e36b-638b-4cf4-ab9a-95187c5684ca" name="Changes" comment="Admin: Inserindo botões e inserindo JS, Importando e Exportando CSV e XLSX. closes #51, closes #52, closes #53">
+    <list default="true" id="e2d0e36b-638b-4cf4-ab9a-95187c5684ca" name="Changes" comment="Admin: Criando actions no Django Admin - exportando CSV. closes #54">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gestao_estoque/produto/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_estoque/produto/admin.py" afterDir="false" />
     </list>
@@ -224,14 +224,9 @@
       <workItem from="1682289959075" duration="2423000" />
       <workItem from="1682293235111" duration="1670000" />
       <workItem from="1682296656773" duration="3621000" />
-      <workItem from="1682394035179" duration="1458000" />
-    </task>
-    <task id="LOCAL-00003" summary="Criar app core. Close #4">
-      <created>1679875468035</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1679875468035</updated>
+      <workItem from="1682394035179" duration="2064000" />
+      <workItem from="1682434094491" duration="712000" />
+      <workItem from="1682532682622" duration="1764000" />
     </task>
     <task id="LOCAL-00004" summary="Criar app produto. Close #5">
       <created>1679968078294</created>
@@ -569,7 +564,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682394956215</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Admin: Criando actions no Django Admin - exportando CSV. closes #54">
+      <created>1682395524685</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1682395524685</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -587,7 +589,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Separando os estáticos. produto.js Close #26" />
     <MESSAGE value="Tirando o input 'movimento' do form. Close #27" />
     <MESSAGE value="Transformando estoque_entrada_add e estoque_saida_add em um só. Close #28" />
     <MESSAGE value="Transformando estoque_entrada_list.html e estoque_saida_list.html em um só. Close #29" />
@@ -612,7 +613,18 @@
     <MESSAGE value="Criando categorias de produtos. closes #50" />
     <MESSAGE value="Importando planilhas Excel com Django. closes #48" />
     <MESSAGE value="Admin: Inserindo botões e inserindo JS, Importando e Exportando CSV e XLSX. closes #51, closes #52, closes #53" />
-    <option name="LAST_COMMIT_MESSAGE" value="Admin: Inserindo botões e inserindo JS, Importando e Exportando CSV e XLSX. closes #51, closes #52, closes #53" />
+    <MESSAGE value="Admin: Criando actions no Django Admin - exportando CSV. closes #54" />
+    <option name="LAST_COMMIT_MESSAGE" value="Admin: Criando actions no Django Admin - exportando CSV. closes #54" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gestao_estoque/produto/views.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/gestao_estoque$create_data.coverage" NAME="create_data Coverage Results" MODIFIED="1679972928466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
