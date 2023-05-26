@@ -92,6 +92,20 @@ def save_data(data):
     Cria objetos Produto a partir dos dados lidos do arquivo CSV e salva esses objetos no banco de dados usando o método bulk_create do ORM do Django
     """
     produtos = []
+    categorias = []
+
+    for item in data:
+        categoria = item.get('categoria')
+
+        if categoria:
+            if categoria not in categorias:
+                categorias.append(categoria)
+
+    for categoria in categorias:
+        categoria_obj = Categoria(categoria=categoria)
+        categoria_obj.save()
+
+
     for item in data:
         # Extrai os valores das colunas do dicionário
         produto = item.get('produto')
@@ -100,6 +114,9 @@ def save_data(data):
         preco = item.get('preco')
         estoque = item.get('estoque')
         estoque_minimo = item.get('estoque_minimo')
+        _categoria = item.get('categoria')
+        categoria = Categoria.objects.filter(categoria=_categoria).first()
+
         # Cria um objeto Produto com os valores extraídos
         produto_obj = Produto(
             produto=produto,
@@ -107,16 +124,18 @@ def save_data(data):
             importado=importado,
             preco=preco,
             estoque=estoque,
-            estoque_minimo=estoque_minimo
+            estoque_minimo=estoque_minimo,
+            categoria=categoria
         )
         produtos.append(produto_obj)
+
     # Cria todos os objetos Produto de uma vez usando o método bulk_create do ORM do Django
     Produto.objects.bulk_create(produtos)
 
 def import_csv(request):
     if request.method == 'POST' and request.FILES['myfile']:
         myfile = request.FILES['myfile']
-        file = myfile.read().decode('latin-1')
+        file = myfile.read().decode('utf-8')
         reader = csv.DictReader(io.StringIO(file))
         data = [row for row in reader]
         save_data(data)
